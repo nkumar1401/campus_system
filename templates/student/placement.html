@@ -1,0 +1,43 @@
+{%extends 'master.html' %}
+{%block title%}
+<title>placement page</title>
+{%endblock title%}
+{%block body%}
+    
+    
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        {% for data in student %}
+        
+          <div class="carousel-item active">
+            <img class="d-block w-50 img-fluid " style="height: 400px;width: 100px;display: flex;margin-top: 50px;flex-wrap: wrap;margin: auto; padding: 10px;" src="" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 style="color: rgb(205, 240, 8);">Lorem</h5>
+                <p style="color: rgb(205, 240, 8);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestiae quas, nobis inventore rerum quod necessitatibus voluptatem reprehenderit eveniet magni enim, corporis sapiente facilis cum dicta doloremque maxime quibusdam cupiditate.</p>
+              </div>
+          </div>
+        </div>
+        <div style="height: 100px; width: 50%; background-color: aqua; margin:auto;">
+            <h1 style="color: rgb(205, 240, 8);">Lorem</h5>
+                <p style="color: rgb(205, 240, 8);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestiae quas, nobis inventore rerum quod necessitatibus voluptatem reprehenderit eveniet magni enim, corporis sapiente facilis cum dicta doloremque maxime quibusdam cupiditate.</p>
+        </div>
+        {%endfor%}
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+
+</div>
+{%endblock body%}
+

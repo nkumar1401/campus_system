@@ -1,0 +1,142 @@
+{%extends 'master.html' %}
+{%block title%}
+<title>python page</title>
+{%endblock title%}
+{%block body%}
+<div style="height: 50px;width: 100%; background-color: whitesmoke; margin: auto; display: flex; justify-content: space-evenly;font-size: larger; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; "  >
+    <button  class="in" style="border: none;"><span style=" color: #cc11ad; ">Karve Nagar</span> : +91 8888809416</button>
+    <button style="border: none;"><span style=" color: rgb(22, 177, 22); ">Deccan: </span> : +91 9028682797</button><button style="border: none;"><span style=" color: rgb(233, 59, 6); ">Nagpur:</span> : +91 9529204783</button><button style="border: none;"><span style=" color: rgb(25, 11, 223); ">Chinchwad:</span> +91 8857055009</button>
+    
+  </div>
+
+<div style="height: 2px;width: 100%;"></div>
+<div style="height: 1200px;
+width: 100%;
+display: flex
+">
+
+<div style="height: 50%;
+color: #112A46;
+border: 2px solid goldenrod;
+border-radius: 20px;
+width: 40%;
+margin-left: 1px;background-color:#8492a1 
+">
+
+<div style="padding: 25px; display: flex; flex-wrap: nowrap;">
+  <form method="POST">
+    {% csrf_token %}
+    {% include 'message.html' %}
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="n">Name</label>
+        <input type="text" class="form-control" id="n" placeholder="name" name="name">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="c">Course</label>
+        <input type="text" class="form-control" id="c" placeholder="course" name="course">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="y">year_of_passing</label>
+      <input type="number" class="form-control" id="y" placeholder="year" name="year">
+    </div>
+    <div class="form-group">
+      <label for="d">date</label>
+      <input type="date" class="form-control" id="d" placeholder="date year" name="date">
+    </div>
+    <div class="form-group">
+      <label for="q">qualification </label>
+      <input type="text" class="form-control" id="q" placeholder="Highest degree" name="qualification">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="m">mobile_no</label>
+        <input type="number" class="form-control" id="m" placeholder="mobile number" name="mobile" >
+      </div>
+ 
+    </div>
+    <button type="submit" class="btn btn-primary">Call Request</button>
+  </form>
+</div>
+
+
+
+</div>
+<div style="height: 90%;
+width: 60%;
+margin-right: 1px;background-color: #ACC8E5;
+padding: 50px;">
+
+<p>
+    <ul>
+    <h2>Reasons Why You Should Learn Python</h2>
+    Here are the 12 reasons why you should learn Python: its versatility, extensive libraries, data science capabilities, artificial intelligence (AI), machine learning (ML), web development, scripting, automation, cross-platform compatibility, open-source nature, ease of learning, high demand in the job market, and competitive salaries.
+    
+    <h2><h2> Data Science</h2>
+        Python is the preferred programming language of most data scientists. Be it IT ops, software development or marketing, currently every job makes use of data and depends on it to drive their operations. With the release of ‘Numpy‘ and ‘Pandas’, Python rose to prominence in the world of data. Python also handles statistical, tabular and matrix data and also visualizes it with libraries like ‘Matplotlib’ and ‘Seaborn‘.
+        Moreover, in the data science arena, python job postings outnumber all others. This indicates the fact that the skills you gain with Python will directly transfer to developing your analytic skills.
+       
+        <h2>  Web Development</h2>
+        Python has a variety of framework support website or web-development. Python has an array of frameworks for developing websites. Popular frameworks such as Django, Flask, and Pylons are characterized by faster and stable code; this is because they are written in Python. Using Python, the users can perform web scraping which means fetching details from other websites.
+
+        <h2> Artificial Intelligence</h2>
+Artificial Intelligence (AI) is a pivotal domain where Python shines. Python’s libraries like TensorFlow and Keras enable the implementation of complex machine learning and deep learning algorithms. These libraries are widely used in AI applications such as natural language processing (NLP), where Python’s NLTK and spaCy excel in tasks like sentiment analysis and language translation. In computer vision, Python’s OpenCV library is a go-to tool for tasks like image recognition and object detection.
+
+        <h2>Conclusion</h2>
+In conclusion, learning Python in 2024 is a strategic career move due to its user-friendly nature, extensive libraries, and wide-ranging applications. The continued demand for Python skills across industries makes it a valuable asset for developers states the usefulness and reason to learn python. By mastering Python, you open doors to diverse opportunities in web development, data science, artificial intelligence, and automation, positioning yourself for success in the dynamic tech landscape.
+</ul>
+</p>
+
+<a href="{%url 'enroll' %}" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true">Enroll now</a>
+</div>
+
+
+</div>
+
+<div style="height: 50px;width: 100%; background-color: #0b3158;display: flex;justify-content: center;align-content: center; margin-top: 20px;">
+
+    <div style="height: 49px;width: 100%; background-color: #ACC8E5;  text-align: center;align-content: center; "> <a style="text-decoration: none;color: #112A46;" href="{%url 'python' %}"> <h5>Back To Top</h3></a></div>
+  
+  </div> 
+
+<footer>
+    <div style="height: 25px;width: 100%;background-color: #e6e8e6;"></div>
+    <div style="height: 400px;
+     width:100% ;
+     color:#e6e8e6;
+    background-color: #080708;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     padding: 25px 10px 10px 25px;">
+    <div style="height: 300px; width: 200px; background-color:#080708; color: #e6e8e6;">
+      <ul>
+        <h4 style="color: #fdca40;">Quick links</h4> 
+        <a class="foot" href="{%url 'home' %}">Home</a><br>
+        <a class="foot"href="{%url 'aboutus' %}">About us</a><br>
+        <a class="foot"href="#">Careers</a>
+        <a class="foot"href="">Contact Us
+        </a>
+  
+      </ul>
+    </div>
+    <div style="height: 300px; width: 200px; background-color:#080708">
+     <h4 style="color: #fdca40;"> Popular Courses</h3>
+      <ul>
+        <a class="foot"href="">Java</a><br>
+        <a class="foot"href="">Python</a><br>
+        <a class="foot" href="">AWS</a></ol>
+    </div>
+    <div style="height: 300px; width: 200px; background-color:#080708;">
+      <p><img src="https://thekiranacademy.com/img/footer-logo.png" alt="">
+        <hr>
+  
+        Copyright © 2022 The Kiran Academy
+  
+        Powered By Thundercube Pvt Ltd</p>
+    </div>
+      
+    </div>
+  </footer> 
+{%endblock body%}

@@ -1,0 +1,79 @@
+{%extends 'master.html' %}
+{%block title%}
+<title>Enrollment details page</title>
+{%endblock title%}
+{%block body%}
+
+  <div style="display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 700px; 
+  width:100% ;background-image: url(https://plus.unsplash.com/premium_photo-1679082305850-63541e846a4a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHw3M3x8fGVufDB8fHx8fA%3D%3D);
+  ">
+ 
+  <div style="height:90%;
+   width: 40%;
+   margin-right: 50%;
+   margin-top: 1px;
+   border: 2px solid wheat; padding: 50px; background-color: #ACC8E5" >
+   
+   <form  method="post" >
+    {%csrf_token%}
+    <div >
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="f">Full name</label>
+          <input type="text" class="form-control" id="f" placeholder="Enter Full name" name="name">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="e">Email</label>
+          <input type="email" class="form-control" id="e" placeholder="name@example.com" name="email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">City</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="city" name="city">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">degree</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Highest qualification" name="degree">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="p">Percentage</label>
+          <input type="number" class="form-control" id="p" name="percentage" placeholder="%">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="d">Today date</label>
+          <input type="date" class="form-control" id="d" name="date" placeholder="yyyy-mm-dd">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="c">courses</label>
+          <select id="c" class="form-control" name="courses">
+            <option >choose here</option>
+            <option>Python</option>
+            <option>java</option>
+            <option>Aws</option>
+  
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="f">Fee</label>
+          <input type="number" class="form-control" id="f" name="fee" placeholder="INR">
+        </div>
+      </div>
+      
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="reset" class="btn btn-primary">Reset</button>
+      </div>
+  
+    </form>
+   
+  
+  
+  </div>
+
+
+
+{%endblock body%}

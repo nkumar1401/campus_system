@@ -1,0 +1,90 @@
+Watching for file changes with StatReloader
+E:\PythonPractice\python practice.py\tka\management\management\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9773
+"GET /enroll HTTP/1.1" 200 6120
+"POST /enroll HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 10086
+"GET /myaccount/signup/ HTTP/1.1" 200 5481
+"POST /myaccount/signup/ HTTP/1.1" 302 0
+"GET /myaccount/signup/ HTTP/1.1" 200 5790
+"POST /myaccount/signup/ HTTP/1.1" 302 0
+"GET /myaccount/login/ HTTP/1.1" 200 4921
+"POST /myaccount/login/ HTTP/1.1" 302 0
+"GET /myaccount/dashboard/ HTTP/1.1" 200 5042
+E:\PythonPractice\python practice.py\tka\management\student\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 10082
+"GET /enroll HTTP/1.1" 200 6120
+E:\PythonPractice\python practice.py\tka\management\student\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /enroll HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 10087
+E:\PythonPractice\python practice.py\tka\management\management\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /aboutus HTTP/1.1" 200 7864
+"GET /myaccount/login/ HTTP/1.1" 200 4610
+"POST /myaccount/login/ HTTP/1.1" 302 0
+"GET /myaccount/dashboard/ HTTP/1.1" 200 5665
+E:\PythonPractice\python practice.py\tka\management\student\middleware.py changed, reloading.
+Watching for file changes with StatReloader
+E:\PythonPractice\python practice.py\tka\management\student\middleware.py changed, reloading.
+Watching for file changes with StatReloader
+E:\PythonPractice\python practice.py\tka\management\management\settings.py changed, reloading.
+2025-02-17 12:01:35 - Watching for file changes with StatReloader
+2025-02-17 12:01:40 - "GET / HTTP/1.1" 200 10082
+2025-02-17 12:01:49 - "GET /myaccount/login/ HTTP/1.1" 200 4610
+2025-02-17 12:02:00 - "POST /myaccount/login/ HTTP/1.1" 302 0
+2025-02-17 12:02:00 - "GET /myaccount/dashboard/ HTTP/1.1" 200 5665
+2025-02-17 12:03:39 - "GET / HTTP/1.1" 200 10082
+2025-02-17 12:03:41 - "GET /aboutus HTTP/1.1" 200 7864
+2025-02-17 12:03:42 - "GET / HTTP/1.1" 200 9773
+2025-02-17 12:03:44 - "GET / HTTP/1.1" 200 9773
+2025-02-17 12:03:47 - "GET /placement HTTP/1.1" 200 4404
+2025-02-17 12:03:47 - "GET /enroll HTTP/1.1" 200 6120
+2025-02-17 12:18:51 - E:\PythonPractice\python practice.py\tka\management\student\views.py changed, reloading.
+2025-02-17 12:19:00 - Watching for file changes with StatReloader
+2025-02-17 12:19:02 - E:\PythonPractice\python practice.py\tka\management\student\views.py changed, reloading.
+2025-02-17 12:19:03 - Watching for file changes with StatReloader
+2025-02-17 12:19:44 - Watching for file changes with StatReloader
+2025-02-17 12:19:49 - "GET / HTTP/1.1" 200 9773
+2025-02-17 12:20:06 - "GET /aboutus HTTP/1.1" 200 7864
+2025-02-17 12:21:04 - E:\PythonPractice\python practice.py\tka\management\student\views.py changed, reloading.
+2025-02-17 12:21:09 - Watching for file changes with StatReloader
+2025-02-17 12:21:14 - "GET / HTTP/1.1" 200 9773
+2025-02-17 12:21:26 - "GET /aboutus HTTP/1.1" 200 7864
+2025-02-17 15:30:26 - Watching for file changes with StatReloader
+2025-02-17 15:30:32 - E:\PythonPractice\python practice.py\tka\management\student\views.py changed, reloading.
+2025-02-17 15:30:33 - Watching for file changes with StatReloader
+2025-02-17 15:30:39 - "GET /aboutus HTTP/1.1" 200 7864
+2025-02-17 15:35:52 - Watching for file changes with StatReloader
+2025-02-17 15:35:57 - "GET / HTTP/1.1" 200 9773
+2025-02-17 15:36:08 - "GET /aboutus HTTP/1.1" 200 7864
+2025-02-17 15:38:30 - "GET /aboutus HTTP/1.1" 200 7864
+2025-02-17 15:49:43 - "GET /aboutus HTTP/1.1" 200 7864
+2025-02-17 15:49:44 - "GET /aboutus HTTP/1.1" 200 7864
+2025-02-17 15:49:45 - "GET /aboutus HTTP/1.1" 200 7864
+2025-02-17 15:49:45 - "GET /aboutus HTTP/1.1" 200 7864
+2025-02-17 15:49:45 - "GET /aboutus HTTP/1.1" 200 7864
+2025-02-17 15:49:47 - "GET / HTTP/1.1" 200 9773
+2025-02-17 15:49:48 - "GET /aboutus HTTP/1.1" 200 7864
+2025-02-17 16:18:31 - "GET /aboutus HTTP/1.1" 200 7864
+2025-02-17 16:18:37 - "GET / HTTP/1.1" 200 9773
+2025-02-17 16:18:40 - "GET /aboutus HTTP/1.1" 200 7864
+2025-02-17 16:26:08 - Watching for file changes with StatReloader
+2025-02-17 16:26:33 - "GET / HTTP/1.1" 200 9773
+2025-02-17 16:26:39 - "GET /aboutus HTTP/1.1" 200 7864
+2025-02-17 17:26:16 - "GET / HTTP/1.1" 200 9773
+2025-02-19 12:10:58 - Watching for file changes with StatReloader
+2025-02-25 18:45:55 - Watching for file changes with StatReloader
+2025-02-25 18:46:40 - Watching for file changes with StatReloader
+2025-02-25 18:52:24 - E:\PythonPractice\python practice.py\tka\management\management\settings.py changed, reloading.
+2025-02-25 18:52:36 - Watching for file changes with StatReloader
+2025-02-25 18:58:05 - E:\PythonPractice\python practice.py\tka\management\management\settings.py changed, reloading.
+2025-02-25 19:06:16 - Watching for file changes with StatReloader
+2025-02-25 19:10:27 - Watching for file changes with StatReloader
+2025-02-25 19:12:15 - Watching for file changes with StatReloader
+2025-02-25 19:13:20 - Watching for file changes with StatReloader
+2025-02-25 19:19:03 - Watching for file changes with StatReloader
+2025-02-25 19:21:27 - Watching for file changes with StatReloader

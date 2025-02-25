@@ -1,0 +1,145 @@
+{%extends 'master.html' %}
+{%block title%}
+<title>Aws</title>
+{%endblock title%}
+{%block body%}
+<div style="height: 50px;width: 100%; background-color: whitesmoke; margin: auto; display: flex; justify-content: space-evenly;font-size: larger; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; "  >
+  <button  class="in" style="border: none;"><span style=" color: #cc11ad; ">Karve Nagar</span> : +91 8888809416</button>
+  <button style="border: none;"><span style=" color: rgb(22, 177, 22); ">Deccan: </span> : +91 9028682797</button><button style="border: none;"><span style=" color: rgb(233, 59, 6); ">Nagpur:</span> : +91 9529204783</button><button style="border: none;"><span style=" color: rgb(25, 11, 223); ">Chinchwad:</span> +91 8857055009</button>
+  
+</div>
+
+
+<div style="height: 2px;width: 100%;"></div>
+
+<div style="height: 500px; width: 100%; display: flex;justify-content: center; background-image: url(https://apponix.com/front/images/asset/why-should-we-learn-aws-in-2023.png);">
+   
+</div>
+<div style="height: 1200px;
+width: 100%;
+display: flex
+">
+
+<div style="height: 90%;
+width: 40%;
+margin-left: 1px;background-color: #fdca40;
+border: 2px solid rgb(196, 63, 151);
+border-radius: 20px;">
+
+<div style="padding: 25px; display: flex; flex-wrap: nowrap;">
+  <form method="POST">
+    {% csrf_token %}
+    {% include 'message.html' %}
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="n">Name</label>
+        <input type="text" class="form-control" id="n" placeholder="name" name="name">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="c">Course</label>
+        <input type="text" class="form-control" id="c" placeholder="course" name="course">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="y">year_of_passing</label>
+      <input type="number" class="form-control" id="y" placeholder="year" name="year">
+    </div>
+    <div class="form-group">
+      <label for="d">date</label>
+      <input type="date" class="form-control" id="d" placeholder="date year" name="date">
+    </div>
+    <div class="form-group">
+      <label for="q">qualification </label>
+      <input type="text" class="form-control" id="q" placeholder="Highest degree" name="qualification">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="m">mobile_no</label>
+        <input type="number" class="form-control" id="m" placeholder="mobile number" name="mobile" >
+      </div>
+ 
+    </div>
+    <button type="submit" class="btn btn-primary">Call Request</button>
+  </form>
+</div>
+
+</div>
+<div style="height: 90%;
+width: 60%;
+margin-right: 1px;background-color: #ACC8E5;
+padding: 50px;
+border: 1px solid black;
+border-radius: 40px;">
+
+<p>
+    <ul>
+      <h2>Why Should We Learn Aws In 2024</h2>
+      Cloud Computing services' demand curve continues to flourish and is a critical element in business. According to IDC, from 2018, spending on public cloud services and infrastructure worldwide will rise by 23.8 percent, reaching a total expenditure of $210 billion in 2019. From 2017 to 2024, the projected five-year compound annual growth rate (CAGR) is projected to be 22.5% to reach $370 billion.
+      <h2>Top 3 Benefits Of Learning AWS</h2>
+There is no better time to do so if you want to learn AWS than right now. If you have AWS certification, there are plenty of opportunities for employment or to start your own business. For your consideration, here are three reasons why not only newcomers and cloud professionals will benefit from learning AWS and getting a certification, but also those who want to build a career or improve their business.
+
+<h3>Increased Enterprise Cloud Migration to AWS</h3>
+SMBs are rapidly migrating into the cloud to enterprise organizations across industry verticals. Global data center IP traffic will reach 20.6 Zettabytes (ZB) (1.7 ZB per month by the end of 2024, according to Cisco. The growth rate of the global public cloud services market is also expected to reach 17.5 percent
+
+<h3>Cloud Computing expertise is inevitable for IT professionals</h3>
+A push towards the cloud is driven by the emergence of cutting-edge technologies like Artificial Intelligence and Machine Learning.
+
+<h3>The Fastest-Growing Public Cloud Service: AWS</h3>
+AWS was the first to market its offer of public cloud services and has had a head start over rivals such as Microsoft Azure and Google Cloud Platform for seven years. There were already a hundred and eighty thousand developers on the platform a year after AWS was launched in 2006. The AWS team hasn't looked back since then. AWS expanded its market share to 42 percent in the third quarter of 2017 and reached 49 percent by the first quarter of 2018. AWS is expected to increase its share of the market to 52 percent by 2024.
+    
+    
+</ul>
+</p>
+
+<a style="border-radius: 40px;" href="{%url 'enroll' %}" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true">Enroll now</a>
+</div>
+
+
+</div>
+
+<div style="height: 50px;width: 100%; background-color: #0b3158;display: flex;justify-content: center;align-content: center; margin-top: 20px;">
+
+  <div style="height: 49px;width: 100%; background-color: #ACC8E5;  text-align: center;align-content: center; "> <a style="text-decoration: none;color: #112A46;" href="{%url 'aws' %}"> <h5>Back To Top</h3></a></div>
+
+</div> 
+
+<footer>
+    <div style="height: 25px;width: 100%;background-color: #e6e8e6;"></div>
+    <div style="height: 400px;
+     width:100% ;
+     color:#e6e8e6;
+    background-color: #080708;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     padding: 25px 10px 10px 25px;">
+    <div style="height: 300px; width: 200px; background-color:#080708; color: #e6e8e6;">
+      <ul>
+        <h4 style="color: #fdca40;">Quick links</h4> 
+        <a class="foot" href="{%url 'home' %}">Home</a><br>
+        <a class="foot"href="{%url 'aboutus' %}">About us</a><br>
+        <a class="foot"href="#">Careers</a>
+        <a class="foot"href="">Contact Us
+        </a>
+  
+      </ul>
+    </div>
+    <div style="height: 300px; width: 200px; background-color:#080708">
+     <h4 style="color: #fdca40;"> Popular Courses</h3>
+      <ul>
+        <a class="foot"href="">Java</a><br>
+        <a class="foot"href="">Python</a><br>
+        <a class="foot" href="">AWS</a></ol>
+    </div>
+    <div style="height: 300px; width: 200px; background-color:#080708;">
+      <p><img src="https://thekiranacademy.com/img/footer-logo.png" alt="">
+        <hr>
+  
+        Copyright © 2022 The Kiran Academy
+  
+        Powered By Thundercube Pvt Ltd</p>
+    </div>
+      
+    </div>
+  </footer> 
+{%endblock body%}

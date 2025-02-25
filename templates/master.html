@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- java -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%block title%}
+    
+    {%endblock title%}
+
+    <style>
+      *{color: #112A46; }
+      .foot{color: #e6e8e6;}
+      
+    </style>
+</head>
+<body>
+  <header><div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" >
+        <a class="navbar-brand"  href="#"><span style="color: orangered; font-family: Arial, Helvetica, sans-serif;">T</span>he <span style="color: orangered;">K</span>iran <span style="color: orangered;">A</span>cademy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="{%url 'home' %}">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="{%url 'aboutus' %}">Aboutus</a>
+            <a class="nav-item nav-link" href="{%url 'placement' %}">Placement</a>
+            <!-- <a class="nav-item nav-link" href="{%url 'registration' %}">Registration</a> -->
+            <a class="nav-item nav-link" href="{%url 'enroll' %}">Enroll</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Courses 
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="{%url 'python' %}">Python</a>
+                  <a class="dropdown-item" href="{%url 'java' %}">Java action</a>
+                  <a class="dropdown-item" href="{%url 'aws' %}">Aws</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Employee login 
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  {% if User.is_authenticated %}
+                 
+                  <a class="dropdown-item" href="{%url 'logout' %}">logout</a>
+                  <a class="dropdown-item" href="{%url 'dashboard' %}">dashboard </a>
+                  {% else %}
+                  <a class="dropdown-item" href="{%url 'signup' %}">Sign Up</a>
+                  <a class="dropdown-item" href="{%url 'login' %}">logIn </a>
+                
+                  {% endif %}             
+              </li>
+          </div>
+        </div>
+      </nav></div>
+    </header>
+  
+  <!-- cards start -->
+  {%block body%}
+  <div style="height: 50px;width: 100%; background-color: whitesmoke; margin: auto; display: flex; justify-content: space-evenly;font-size: larger; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; "  >
+    <button  class="in" style="border: none;"><span style=" color: #cc11ad; ">Karve Nagar</span> : +91 8888809416</button>
+    <button style="border: none;"><span style=" color: rgb(22, 177, 22); ">Deccan: </span> : +91 9028682797</button><button style="border: none;"><span style=" color: rgb(233, 59, 6); ">Nagpur:</span> : +91 9529204783</button><button style="border: none;"><span style=" color: rgb(25, 11, 223); ">Chinchwad:</span> +91 8857055009</button>
+    
+  </div>
+      <hr><hr>
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMnKfGxhrf0hnjcj4CCg4qq3ksXCVebA6Qeg&s" alt="Card image cap" ">
+          <div class="card-body">
+            <h5 class="card-title"><h2>Python</h2></h5>
+            <p class="card-text">Python is a high-level, interpreted programming language known for its readability and simplicity. It is widely used for web development, data analysis, machine learning, and more..</p>
+            <a href="{%url 'enroll' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Enroll now</a>
+            <a href="{%url 'learnpy' %}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Learn more</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2mEKnSBC-uAu0opZMBeMLPZe87BIjpZ051g&s" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><h2>Java</h2></h5>
+            <p class="card-text">
+                Java: Java is a versatile, object-oriented programming language that is widely used for building cross-platform applications. It is known for its portability, robustness, and extensive libraries.</p>
+                <a href="{%url 'java' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Enroll now</a>
+            <a href="{%url 'learnjava' %}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Learn more</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV9If8-9zX5d41GZSPCnkLD6Jqa-TKKKogHw&s" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Aws</h5>
+            <p class="card-text">AWS (Amazon Web Services): AWS is a comprehensive cloud computing platform offering a wide range of services like storage, compute power, and databases, enabling businesses to scale and innovate efficiently.    </p>
+            <a href="{%url 'aws' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Enroll now</a>
+            <a href="{%url 'learnaws' %}" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Learn more</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+  </div>
+
+<div style="height: 50px;width: 100%; background-color: #cc11ad;"></div>
+
+<div style="height: 50px;width: 100%;background-color: #080708;"></div>
+
+
+  <footer>
+    <div style="height: 25px;width: 100%;background-color: #e6e8e6;"></div>
+    <div style="height: 400px;
+     width:100% ;
+     color:#e6e8e6;
+    background-color: #080708;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     padding: 25px 10px 10px 25px;">
+    <div style="height: 300px; width: 200px; background-color:#080708; color: #e6e8e6;">
+      <ul>
+        <h4 style="color: #fdca40;">Quick links</h4> 
+        <a class="foot" href="{%url 'home' %}">Home</a><br>
+        <a class="foot"href="{%url 'aboutus' %}">About us</a><br>
+        <a class="foot"href="#">Careers</a>
+        <a class="foot"href="">Contact Us
+        </a>
+  
+      </ul>
+    </div>
+    <div style="height: 300px; width: 200px; background-color:#080708">
+     <h4 style="color: #fdca40;"> Popular Courses</h3>
+      <ul>
+        <a class="foot"href="">Java</a><br>
+        <a class="foot"href="">Python</a><br>
+        <a class="foot" href="">AWS</a></ol>
+    </div>
+    <div style="height: 300px; width: 200px; background-color:#080708;">
+      <p><img src="https://thekiranacademy.com/img/footer-logo.png" alt="">
+        <hr>
+  
+        Copyright © 2022 The Kiran Academy
+  
+        Powered By Thundercube Pvt Ltd</p>
+    </div>
+      
+    </div>
+  </footer>  
+  {%endblock body%}
+
+      
+
+
+ 
+
+</body>
+
+
+</html>

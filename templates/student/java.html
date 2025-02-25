@@ -1,0 +1,159 @@
+{%extends 'master.html' %}
+{%block title%}
+<title>Java</title>
+{%endblock title%}
+{%block body%}
+<div style="height: 50px;width: 100%; background-color: whitesmoke; margin: auto; display: flex; justify-content: space-evenly;font-size: larger; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; "  >
+  <button  class="in" style="border: none;"><span style=" color: #cc11ad; ">Karve Nagar</span> : +91 8888809416</button>
+  <button style="border: none;"><span style=" color: rgb(22, 177, 22); ">Deccan: </span> : +91 9028682797</button><button style="border: none;"><span style=" color: rgb(233, 59, 6); ">Nagpur:</span> : +91 9529204783</button><button style="border: none;"><span style=" color: rgb(25, 11, 223); ">Chinchwad:</span> +91 8857055009</button>
+  
+</div>
+<img s src="https://media.geeksforgeeks.org/wp-content/uploads/20190423151317/Top-10-Reasons-to-Learn-Java.png"  alt="">
+
+<div style="height: 2px;width: 100%;;
+">
+  
+</div>
+<div style="height: 1200px;
+width: 100%;
+display: flex
+">
+
+
+<div style="height: 90%;
+width: 40%;
+margin-left: 1px;background-color: #949189;
+border: 2px solid goldenrod;
+border-radius: 20px;">
+
+<div style="padding: 25px; display: flex; flex-wrap: nowrap;">
+  <form method="POST">
+    {% csrf_token %}
+    {% include 'message.html' %}
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="n">Name</label>
+        <input type="text" class="form-control" id="n" placeholder="name" name="name">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="c">Course</label>
+        <input type="text" class="form-control" id="c" placeholder="course" name="course">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="y">year_of_passing</label>
+      <input type="number" class="form-control" id="y" placeholder="year" name="year">
+    </div>
+    <div class="form-group">
+      <label for="d">date</label>
+      <input type="date" class="form-control" id="d" placeholder="date year" name="date">
+    </div>
+    <div class="form-group">
+      <label for="q">qualification </label>
+      <input type="text" class="form-control" id="q" placeholder="Highest degree" name="qualification">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="m">mobile_no</label>
+        <input type="number" class="form-control" id="m" placeholder="mobile number" name="mobile" >
+      </div>
+ 
+    </div>
+    <button type="submit" class="btn btn-primary">Call Request</button>
+  </form>
+</div>
+
+
+
+
+</div>
+<div style="height: 90%;
+width: 60%;
+margin-right: 1px;background-color: #ACC8E5;
+padding: 50px;">
+
+<p>
+    <ul>
+      
+      <h2>Top 12 reasons to learn Java in 2024</h2>
+      The big question here is “Why Learn Java.” There are several reasons to learn Java that can leave you overwhelmed. To make your life easier, we have compiled some of the major reasons why you should learn Java programming.
+      
+      Without further ado, here are the top 12 reasons why learning Java programming language is a smart choice for anyone looking to enhance their technical skills and career prospects in 2024.
+
+      <h2>High Demand for Java Developers</h2>
+      Java developers are still in high demand today. In terms of professional prospects, it is among the best languages. Businesses of all sizes, from start-ups to Fortune 500 companies in the US, are always in need of Java developers to work on projects.
+      
+      Gaining knowledge of Java can help you obtain employment in positions with competitive pay and room for advancement, such as software engineer, backend developer, and Android developer.
+       
+    <h2>Widespread use in industry</h2>
+      Java’s scalability, security features, and resilience have led to its broad acceptance in several industries. Major industries including banking, healthcare, and retail use Java for their vital applications because of its effectiveness in managing large-scale systems.
+
+Businesses appreciate Java’s cross-platform compatibility, which makes deployment easier in multiple scenarios. Owing to Java’s broad applicability, which guarantees a high demand for Java developers, the language is a mainstay of enterprise-level solutions. It is also a top option for businesses looking to construct dependable, cross-platform applications that focus on long-term performance.
+
+High-Paying Career Aspects in Java Development
+<h2></h2>
+Java skills are in high demand across various industries, making it an excellent choice for those seeking a lucrative career in tech. Here’s a closer look at the earning potential for Java developers:
+
+Average Java Developer <h4>Salary: $47,169 – $106,610 per year</h4> (Payscale, 2024)
+Factors Affecting Java Developer Salary: Experience, location, industry, company size, and skillset can significantly impact your earning potential.
+      
+</ul>
+</p>
+
+<a href="{%url 'enroll' %}" class="btn btn-primary btn-lg btn-block active" role="button" aria-pressed="true">Enroll now</a>
+</div>
+
+
+</div>
+<div style="height: 100px;width: 100%;">
+  <img src="https://dotnettrickscloud.blob.core.windows.net/img/java/120230103203203.png" alt="">
+
+
+  <div style="height: 50px;width: 100%; background-color: #0b3158;display: flex;justify-content: center;align-content: center; margin-top: 20px;">
+
+    <div style="height: 49px;width: 100%; background-color: #ACC8E5;  text-align: center;align-content: center; "> <a style="text-decoration: none;color: #112A46;" href="{%url 'java' %}"> <h5>Back To Top</h3></a></div>
+  
+  </div> 
+
+ <footer >
+    <div style="height: 25px;width: 100%;background-color: #e6e8e6;"></div>
+    <div style="height: 400px;
+     width:100% ;
+     color:#e6e8e6;
+    background-color: #080708;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     padding: 25px 10px 10px 25px;">
+    <div style="height: 300px; width: 200px; background-color:#080708; color: #e6e8e6;">
+      <ul>
+        <h4 style="color: #fdca40;">Quick links</h4> 
+        <a class="foot" href="{%url 'home' %}">Home</a><br>
+        <a class="foot"href="{%url 'aboutus' %}">About us</a><br>
+        <a class="foot"href="#">Careers</a>
+        <a class="foot"href="">Contact Us
+        </a>
+  
+      </ul>
+    </div>
+    <div style="height: 300px; width: 200px; background-color:#080708">
+     <h4 style="color: #fdca40;"> Popular Courses</h3>
+      <ul>
+        <a class="foot"href="">Java</a><br>
+        <a class="foot"href="">Python</a><br>
+        <a class="foot" href="">AWS</a></ol>
+    </div>
+    <div style="height: 300px; width: 200px; background-color:#080708;">
+      <p><img src="https://thekiranacademy.com/img/footer-logo.png" alt="">
+        <hr>
+  
+        Copyright © 2022 The Kiran Academy
+  
+        Powered By Thundercube Pvt Ltd</p>
+    </div>
+      
+    </div>
+    
+    </div>
+  </footer> 
+{%endblock body%}

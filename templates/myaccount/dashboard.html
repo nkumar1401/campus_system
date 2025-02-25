@@ -1,0 +1,45 @@
+{% extends 'master.html'%}
+{%block title%}
+<title>dashboard</title>
+{%endblock title%}
+
+{%block body%}
+
+<center><h2>Student details</h2></center>
+<div style="height:100% ; width: 100%;padding: 25px; border: 2px solid black; margin: auto; ">
+    <table class="table table-striped table-active">
+    <thead>
+      <tr>
+        <th scope="col">Reg_id</th>
+        <th scope="col">Name</th>
+        <th scope="col">City</th>
+        <th scope="col">Email</th>
+        <th scope="col">Degree</th>
+        <th scope="col">Courses</th>
+        <th scope="col">Fee</th>
+        <th scope="col">Percentage</th>
+        <th scope="col">Date</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+        {% for student in students %}
+      <tr>
+        
+        <th scope="row">{{student.reg_id}}</th>
+        <td><a href="/myaccount/singlestudent/{{student.reg_id}}/"> {{student.name}} </a></td>
+        <td>{{student.city}}</td>
+        <td>{{student.email}}</td>
+        <td>{{student.degree}}</td>
+        <td>{{student.courses}}</td>
+        <td>{{student.fee}}</td>
+        <td>{{student.percentage}}</td>
+        <td>{{student.date}}</td>
+
+      </tr>
+      {%endfor%}
+    
+    </tbody>
+  </table></div>
+{%endblock body%}
