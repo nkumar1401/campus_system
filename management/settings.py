@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'student',
     'myaccount',
-    'placement'
+    'placement',
 ]
 
 MIDDLEWARE = [
@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'student.middleware.PerformanceLoggingMiddleware',
-    'student.performance_middleware.PerformanceMiddleware',
+    'performance_middleware.PerformanceMiddleware',
 ]
 
 ROOT_URLCONF = 'management.urls'
@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'management.wsgi.application'
+WSGI_APPLICATION =  "management.wsgi.application"
 
 
 # Database
