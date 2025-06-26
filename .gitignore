@@ -11,3 +11,4 @@ env
 *.db
 *.DS_Store
 *.egg-info/
+/media/
