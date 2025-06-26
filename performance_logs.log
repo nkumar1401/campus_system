@@ -129,3 +129,7 @@ E:\PythonPractice\python practice.py\tka\management\management\settings.py chang
 2025-02-27 10:39:56 - E:\PythonPractice\after course practice\tkafromgit\campus_system\management\settings.py changed, reloading.
 2025-02-27 10:40:05 - Watching for file changes with StatReloader
 2025-02-27 10:40:45 - Watching for file changes with StatReloader
+2025-06-26 13:02:18 - Watching for file changes with StatReloader
+2025-06-26 13:02:28 - "GET / HTTP/1.1" 200 9773
+2025-06-26 13:02:32 - "GET /admin/library/user/ HTTP/1.1" 302 0
+2025-06-26 13:02:32 - "GET /admin/login/?next=/admin/library/user/ HTTP/1.1" 200 4199
